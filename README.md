@@ -12,6 +12,8 @@ A lightweight string utility library for C, designed to make string handling les
 * Substring extraction (`chop`)
 * Split by delimiter
 * Character indexing
+* count of charecters in a string
+* reversing the string
 * Simple C-string wrapper constructor (`pstr`)
 
 ---
