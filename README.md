@@ -128,7 +128,6 @@ my-lib/
 ├── lib/
 │   └── libstr.a
 │
-├── Makefile
 └── README.md
 ```
 
