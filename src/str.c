@@ -14,18 +14,18 @@ str pstr(const char* cstr)
    
    
 }
-int count(str string, char n)
+str reverse(str string)
 {
-  int c = 0;
-  for(int i = 0; i < string.len; i++)
+  int p = strlen(string.content);
+  char* s = (char*)malloc(p);
+  while (p > 0)
   {
-    if(string.content[i] == n)
-    {
-       c++;
-    }
+    s[strlen(string.content) - p] = string.content[p-1]; 
+    p--;
   }
-  return c;
-
+  str line = pstr(s);
+  return line;
+  
 }
 str upper(str string)
 {

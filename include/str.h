@@ -13,8 +13,8 @@ typedef struct
 void _print(str string);
 str lower(str string);
 str upper(str string);
-int count(str string, char n);
 
+str reverse(str string);
 str pstr(const char* cstr);
 
 str chop(str s, int start, int end);
