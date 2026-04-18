@@ -119,6 +119,19 @@ str* split(str string, char rep, int* length)
   return a;
 }
 
+int count(str string, char c)
+{
+  int s = 0;
+  for(int i = 0; i < string.len; i++)
+  {
+    if(string.content[i] == c)
+    {
+      s++;
+    }
+  }
+  return s;
+}
+
 int _index(str string, char c)
 {
   for(int i = 0; i < string.len; i++)
@@ -128,5 +141,5 @@ int _index(str string, char c)
       return i;
     }
   }
-   return -1;
+  return -1;
 }

@@ -21,4 +21,5 @@ str chop(str s, int start, int end);
 
 str* split(str string, char rep, int* length);
 int _index(str string, char c);
+int count(str string, char c);
 #endif
