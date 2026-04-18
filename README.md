@@ -91,7 +91,17 @@ Splits string by delimiter `rep`.
 int _index(str string, char c);
 ```
 
-Returns index of first occurrence of `c` .
+Returns index of first occurrence of `c` returns `-1` if not found.
+
+---
+
+### 📌 Find the number of charecter in a string
+
+```c
+int count(str string, char c);
+```
+
+Returns number occurrence of `c`.
 
 ---
 
