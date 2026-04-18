@@ -13,6 +13,7 @@ typedef struct
 void _print(str string);
 str lower(str string);
 str upper(str string);
+int count(str string, char n);
 
 str pstr(const char* cstr);
 

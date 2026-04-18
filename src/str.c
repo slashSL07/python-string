@@ -14,6 +14,19 @@ str pstr(const char* cstr)
    
    
 }
+int count(str string, char n)
+{
+  int c = 0;
+  for(int i = 0; i < string.len; i++)
+  {
+    if(string.content[i] == n)
+    {
+       c++;
+    }
+  }
+  return c;
+
+}
 str upper(str string)
 {
   char* b = malloc(string.len);
