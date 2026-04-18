@@ -119,6 +119,9 @@ Returns number occurrence of `n`.
 ```
 my-lib/
 │
+├── example/
+│   └── example.c
+│
 ├── include/
 │   └── str.h
 │
@@ -127,9 +130,7 @@ my-lib/
 │
 ├── lib/
 │   └── libstr.a
-│
-├── MakeFile
-│
+│ 
 └── README.md
 ```
 
