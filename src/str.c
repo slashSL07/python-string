@@ -128,4 +128,5 @@ int _index(str string, char c)
       return i;
     }
   }
+   return -1;
 }
