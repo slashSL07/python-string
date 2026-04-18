@@ -12,6 +12,8 @@ A lightweight string utility library for C, designed to make string handling les
 * Substring extraction (`chop`)
 * Split by delimiter
 * Character indexing
+* count of charecters in a string
+* reversing the string
 * Simple C-string wrapper constructor (`pstr`)
 
 ---
@@ -60,6 +62,13 @@ str upper(str string);
 
 Returns a new string in lowercase / uppercase.
 
+---
+
+### 📌 reverse
+```c
+str reverse(str string);
+```
+reverses the str `string` and returns the reversed str
 ---
 
 ### 📌 Substring (slice)
