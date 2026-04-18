@@ -67,6 +67,7 @@ Returns a new string in lowercase / uppercase.
 str reverse(str string);
 ```
 reverses the str `string` and returns the reversed str
+---
 
 ### 📌 Substring (slice)
 
