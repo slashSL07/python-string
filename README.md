@@ -8,13 +8,16 @@ A lightweight string utility library for C, designed to make string handling les
 
 * String struct wrapper (`str`)
 * Convert to lowercase / uppercase
+* Title & capitalization utilities
 * Print helper
 * Substring extraction (`chop`)
 * Split by delimiter
 * Character indexing
-* count of charecters in a string
-* reversing the string
+* Count of characters in a string
+* Reversing the string
 * Simple C-string wrapper constructor (`pstr`)
+* String checks (upper/lower/numeric)
+* Convert to raw `char*`
 
 ---
 
@@ -30,6 +33,7 @@ typedef struct
 
 A simple immutable-style string wrapper around `const char*`.
 
+---
 
 ## 🔧 Functions
 
@@ -64,11 +68,26 @@ Returns a new string in lowercase / uppercase.
 
 ---
 
-### 📌 reverse
+### 📌 Title / Capitalization
+
+```c
+str title(str string);
+str capitalize(str string);
+```
+
+* `capitalize` → Capitalizes the first letter of each word
+* `title` → Formats the string in title case
+
+---
+
+### 📌 Reverse
+
 ```c
 str reverse(str string);
 ```
-reverses the str `string` and returns the reversed str
+
+Reverses the `str` and returns the result.
+
 ---
 
 ### 📌 Substring (slice)
@@ -89,7 +108,7 @@ str* split(str string, char rep, int* length);
 
 Splits string by delimiter `rep`.
 
-* returns dynamically allocated array
+* Returns dynamically allocated array
 * `length` stores number of parts
 
 ---
@@ -100,17 +119,41 @@ Splits string by delimiter `rep`.
 int _index(str string, char c);
 ```
 
-Returns index of first occurrence of `c` returns `-1` if not found.
+Returns index of first occurrence of `c`, returns `-1` if not found.
 
 ---
 
-### 📌 Find the number of charecter in a string
+### 📌 Count characters
 
 ```c
 int count(str string, char n);
 ```
 
-Returns number occurrence of `n`.
+Returns number of occurrences of `n`.
+
+---
+
+### 📌 Conversions
+
+```c
+char* tochararr(str string);
+```
+
+Converts `str` to a C-style `char*`.
+
+---
+
+### 📌 Checks
+
+```c
+int _isupper(str string);
+int _islower(str string);
+int isnumeric(str string);
+```
+
+* `_isupper` → Returns non-zero if all characters are uppercase
+* `_islower` → Returns non-zero if all characters are lowercase
+* `isnumeric` → Returns non-zero if string contains only numeric characters
 
 ---
 
@@ -134,6 +177,7 @@ my-lib/
 └── README.md
 ```
 
+---
 
 ## 🧪 Example Usage
 
@@ -142,10 +186,13 @@ my-lib/
 
 int main()
 {
-    str s = pstr("Hello World");
+    str s = pstr("hello guys welcome");
 
-    str u = upper(s);
-    _print(u);
+    str t = title(s);
+    _print(t);
+
+    char* raw = tochararr(t);
+    printf("%s\n", raw);
 
     return 0;
 }
@@ -161,9 +208,7 @@ gcc main.c -Llib -lstr -Iinclude
 
 ## 🧨 Notes
 
-* Strings are not deeply copied unless specified by function behavior.
-* Be careful with memory returned by `split` (you may need to `free` it).
-* This library is designed for simplicity, not full python replacement behavior.
-
-
-
+* Strings are not deeply copied unless specified by function behavior
+* Be careful with memory returned by functions like `split` and `tochararr` (you may need to `free` it)
+* Some functions allocate new memory — manage it properly
+* This library is designed for simplicity, not full Python-level behavior
