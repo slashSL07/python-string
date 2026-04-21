@@ -18,8 +18,15 @@ str reverse(str string);
 str pstr(const char* cstr);
 
 str chop(str s, int start, int end);
+str replace(str old_str, char* rep, char* new_str);
 
 str* split(str string, char rep, int* length);
 int _index(str string, char c);
 int count(str string, char c);
+str title(str string);
+str capitalize(str string);
+char* tochararr(str string);
+int _isupper(str string);
+int _islower(str string);
+int isnumeric(str string);
 #endif
