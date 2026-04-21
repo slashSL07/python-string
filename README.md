@@ -151,9 +151,9 @@ int _islower(str string);
 int isnumeric(str string);
 ```
 
-* `_isupper` → Returns non-zero if all characters are uppercase
-* `_islower` → Returns non-zero if all characters are lowercase
-* `isnumeric` → Returns non-zero if string contains only numeric characters
+* `_isupper` → Returns `1` if all characters are uppercase
+* `_islower` → Returns `1` if all characters are lowercase
+* `isnumeric` → Returns `1` if string contains only numeric characters
 
 ---
 
