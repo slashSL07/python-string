@@ -119,16 +119,18 @@ Returns number occurrence of `n`.
 ```
 my-lib/
 │
+├── example/
+│   └── example.c
+│
 ├── include/
 │   └── str.h
 │
-├── src/
-│   └── *.c
-│
 ├── lib/
 │   └── libstr.a
-│
-├── Makefile
+│ 
+├── src/
+│   └── str.c
+│ 
 └── README.md
 ```
 
