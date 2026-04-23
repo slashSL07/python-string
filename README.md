@@ -10,14 +10,15 @@ A lightweight string utility library for C, designed to make string handling les
 * Convert to lowercase / uppercase
 * Title & capitalization utilities
 * Print helper
-* Substring extraction (`chop`)
+* Substring extraction (`slice`)
 * Split by delimiter
 * Character indexing
 * Count of characters in a string
 * Reversing the string
-* Simple C-string wrapper constructor (`pstr`)
+* Simple C-string wrapper constructor (`tostr`)
 * String checks (upper/lower/numeric)
 * Convert to raw `char*`
+* Replace substring 
 
 ---
 
@@ -40,7 +41,7 @@ A simple immutable-style string wrapper around `const char*`.
 ### 📌 Create string
 
 ```c
-str pstr(const char* cstr);
+str tostr(const char* cstr);
 ```
 
 Creates a `str` from a C-string.
@@ -90,10 +91,20 @@ Reverses the `str` and returns the result.
 
 ---
 
+### 📌 Replace
+
+```c
+str replace(str old_str, char* rep, char* new_str);
+```
+
+Replaces the `rep` substring in the `old_str` with `new_str` and returns the result.
+
+---
+
 ### 📌 Substring (slice)
 
 ```c
-str chop(str s, int start, int end);
+str slice(str s, int start, int end);
 ```
 
 Extracts substring from `start` to `end`.
@@ -186,7 +197,7 @@ my-lib/
 
 int main()
 {
-    str s = pstr("hello guys welcome");
+    str s = tostr("hello guys welcome");
 
     str t = title(s);
     _print(t);

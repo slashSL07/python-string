@@ -15,9 +15,9 @@ str lower(str string);
 str upper(str string);
 
 str reverse(str string);
-str pstr(const char* cstr);
+str tostr(const char* cstr);
 
-str chop(str s, int start, int end);
+str slice(str s, int start, int end);
 str replace(str old_str, char* rep, char* new_str);
 
 str* split(str string, char rep, int* length);

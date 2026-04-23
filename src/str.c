@@ -5,7 +5,7 @@
 
 
 int inlist(int val, int* list, int len);
-str pstr(const char* cstr)
+str tostr(const char* cstr)
 {
    str string;
    string.content = cstr;
@@ -33,14 +33,51 @@ str reverse(str string)
     s[strlen(string.content) - p] = string.content[p-1]; 
     p--;
   }
-  str line = pstr(s);
+  str line = tostr(s);
   return line;
   
 }
 
 str replace(str old_str, char* rep, char* new_str)
 {
- 
+  char* temp = malloc(sizeof(old_str.content) + 1 + (int)(old_str.len/strlen(rep))*(strlen(new_str) - strlen(rep)));
+  int i = 0;
+  while(i < old_str.len)
+   {
+     if(old_str.content[i] == rep[0])
+      {
+        int c = 1;
+        for(int k = 1; k < strlen(rep); k++)
+         {
+           if(old_str.content[i+k] == rep[k])
+            {
+              c++;
+            }
+         }
+        if(strlen(rep) == c)
+         {
+           for(int j = 0; j < strlen(new_str); j++)
+            {
+              temp[i+j] = new_str[j];
+            }
+           i += strlen(rep);
+         }
+        else
+         {
+           temp[i] = old_str.content[i];
+           i++; 
+         }
+      }
+     else
+      {
+        temp[i] = old_str.content[i];
+        i++; 
+      }
+   }
+   str s = tostr(temp);
+   free(temp);
+   return s;
+  
 }
 
 
@@ -85,7 +122,7 @@ str capitalize(str string)
     {
       var[0] = string.content[0] - 32;
     }
-   str s = pstr(var);
+   str s = tostr(var);
    return s;
 
   
@@ -225,7 +262,7 @@ void _print(str string)
   printf("%.*s", (int)string.len, string.content);
 }
 
-str chop(str s, int start, int end)
+str slice(str s, int start, int end)
 {
  
     if (start < 0) start = 0;
@@ -263,10 +300,10 @@ str* split(str string, char rep, int* length)
   }
  
   str* a = malloc((c+1) * sizeof(str));
-  a[0] = chop(string, 0, pos[0]);
+  a[0] = slice(string, 0, pos[0]);
   for(int i = 1; i <= c+1; i++)
   {
-     a[i] = chop(string, pos[i-1], pos[i]);
+     a[i] = slice(string, pos[i-1], pos[i]);
   }
   *length = c+1;
   return a;

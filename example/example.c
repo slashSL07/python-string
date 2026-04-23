@@ -6,7 +6,7 @@ int main()
 {
   int len = 0;
   char rep = ' ';
-  str s = pstr("wassup guys how are you");
+  str s = tostr("wassup guys how are you");
   
   str* array = split(s, rep , &len);
   for(int i = 0; i < len; i++)
@@ -16,6 +16,10 @@ int main()
   }
   free(array);
   str b = upper(s);
+  str new = replace(s, "wassup", "good morning");
+  _print(new);
+  printf("\n");
   _print(b);
+  printf("\n");
   printf("index of h is %d", _index(s, 'f'));
 }
