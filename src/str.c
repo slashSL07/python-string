@@ -40,16 +40,19 @@ str reverse(str string)
 
 str replace(str old_str, char* rep, char* new_str)
 {
-  char* temp = malloc(sizeof(old_str.content) + 1 + (int)(old_str.len/strlen(rep))*(strlen(new_str) - strlen(rep)));
+  char* temp = malloc(sizeof(old_str.content) +(sizeof(old_str.content)/sizeof(rep))*(sizeof(new_str)));
   int i = 0;
   int t = 0;
+  
   while(i < old_str.len)
    {
      if(old_str.content[i] == rep[0])
       {
         int c = 1;
+        
         for(int k = 1; k < strlen(rep); k++)
          {
+           
            if(old_str.content[i+k] == rep[k])
             {
               c++;
@@ -57,6 +60,7 @@ str replace(str old_str, char* rep, char* new_str)
          }
         if(strlen(rep) == c)
          {
+           
            for(int j = 0; j < strlen(new_str); j++)
             {
               temp[t+j] = new_str[j];
@@ -77,6 +81,7 @@ str replace(str old_str, char* rep, char* new_str)
         t++;
         i++; 
       }
+      
    }
    str s = tostr(temp);
    free(temp);
