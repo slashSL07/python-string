@@ -223,3 +223,5 @@ gcc main.c -Llib -lstr -Iinclude
 * Be careful with memory returned by functions like `split` and `tochararr` (you may need to `free` it)
 * Some functions allocate new memory — manage it properly
 * This library is designed for simplicity, not full Python-level behavior
+
+ADDITIONAL NOTE: the library file is built (and targeted) for windows if you using any other opperating system feel free to built the lib file from the src file
