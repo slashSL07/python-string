@@ -42,6 +42,7 @@ str replace(str old_str, char* rep, char* new_str)
 {
   char* temp = malloc(sizeof(old_str.content) + 1 + (int)(old_str.len/strlen(rep))*(strlen(new_str) - strlen(rep)));
   int i = 0;
+  int t = 0;
   while(i < old_str.len)
    {
      if(old_str.content[i] == rep[0])
@@ -58,19 +59,22 @@ str replace(str old_str, char* rep, char* new_str)
          {
            for(int j = 0; j < strlen(new_str); j++)
             {
-              temp[i+j] = new_str[j];
+              temp[t+j] = new_str[j];
             }
            i += strlen(rep);
+           t +=strlen(new_str);
          }
         else
          {
-           temp[i] = old_str.content[i];
+           temp[t] = old_str.content[i];
            i++; 
+           t++;
          }
       }
      else
       {
-        temp[i] = old_str.content[i];
+        temp[t] = old_str.content[i];
+        t++;
         i++; 
       }
    }
