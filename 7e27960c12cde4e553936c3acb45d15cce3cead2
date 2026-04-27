@@ -1,0 +1,198 @@
+[33mcommit 8e0973c9821b2611d66ffb71bae787fce7babd16[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e9f0771 35fb736
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Fri Apr 24 16:37:53 2026 +0545
+
+    Merge branch 'main' of github.com:slashSL07/python-string
+
+[33mcommit e9f0771756c019c88f415e8fa866c603eb34bf92[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Fri Apr 24 15:15:56 2026 +0545
+
+    v 1.2.rf
+
+[33mcommit b573bef912b6ef4b27649f25a361fb7e2d06875e[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Fri Apr 24 14:52:43 2026 +0545
+
+    v 1.2.rf
+
+[33mcommit 35fb7367cce4ac463139efabbb6ea5eca95329e7[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Thu Apr 23 19:44:23 2026 +0545
+
+    Update README.md
+
+[33mcommit c20085d38b8e36e3b57fb1784ad9a18a5a682dc7[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Thu Apr 23 14:15:07 2026 +0545
+
+    v 1.2.f
+
+[33mcommit 2bb358731a6b6a8c11402f6934d447ce20fcd49b[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Tue Apr 21 15:48:39 2026 +0545
+
+    Updated readme.md with new features
+
+[33mcommit b46f90fbcdadcde2a1bf6bcca15457ca473b716f[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Tue Apr 21 15:47:00 2026 +0545
+
+    Update README with new features and corrections
+
+[33mcommit 7f3cc3ae771b41ad2086259db4d9f54e25e923ce[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Tue Apr 21 15:43:29 2026 +0545
+
+    Update README.md
+
+[33mcommit 32ed4deb49cc0b861bc1f356712a18491be1cb52[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Tue Apr 21 15:38:59 2026 +0545
+
+    Update README to add new string functions to Features and Functions sections
+
+[33mcommit 56781f75513104efc71e4998b2bbb369628b1a30[m
+Merge: 19d2ef3 5e58e1a
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Tue Apr 21 15:35:34 2026 +0545
+
+    Merge branch 'main' of github.com:slashSL07/python-string
+
+[33mcommit 19d2ef3eb47c5436a456ee6b16b1941977042c62[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Tue Apr 21 15:34:39 2026 +0545
+
+    v 1.2
+
+[33mcommit 5e58e1ab00785a2176ec30d1695892dd2dba8cb8[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:57:18 2026 +0545
+
+    Update README.md
+
+[33mcommit f9959ef5d49abb43a76c077ebf55b861da8ba20f[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:56:43 2026 +0545
+
+    Update README.md
+
+[33mcommit e5adb957e7b4b4e7daeefea8f40ff605e517478e[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:55:08 2026 +0545
+
+    Update README.md
+
+[33mcommit 763ca4f19d8c81d00c39b6628cf057f3769b7393[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:53:40 2026 +0545
+
+    Update README.md
+
+[33mcommit a4e4a944d8cfcc4619ee66ab4eddab5e01a50612[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:51:13 2026 +0545
+
+    Update README.md
+
+[33mcommit 5050cbc5d7afe51ab3d3ade0b3743c255da7425c[m
+Merge: 35c6c14 cbf44c8
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 23:33:54 2026 +0545
+
+    Merge branch 'main' of github.com:slashSL07/python-string
+
+[33mcommit 35c6c1468b5c3c3ada4182142823a42d3f12a8a5[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 23:33:20 2026 +0545
+
+    1.1
+
+[33mcommit cbf44c8a71c8432ae00ffa35fe049c0ad6d2c5ff[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:22:24 2026 +0545
+
+    Add new features to README for string manipulation
+
+[33mcommit 9d85c57a3a180628b681c3a00e105820680894c4[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:20:42 2026 +0545
+
+    Update README.md
+
+[33mcommit 74781e924f44d381df385f2a1424ac7642ca3aca[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 23:19:49 2026 +0545
+
+    Update README.md
+
+[33mcommit 04158b4a8e5a7cfd08af9cb910ce8a3400ac2304[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 23:16:46 2026 +0545
+
+    fix
+
+[33mcommit 2a7c38456aed9152e4c84a2aa8ee5d8c4cc53d45[m
+Merge: 84a15cf bf29e66
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 23:10:11 2026 +0545
+
+    Merge branch 'main' of github.com:slashSL07/python-string
+
+[33mcommit 84a15cf5d8416aa7288621f146befd900ab87ca9[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 23:08:27 2026 +0545
+
+    added reverse
+
+[33mcommit bf29e66ce6bbb14d9418a9c275a73c6f7bb19f7b[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 16:22:29 2026 +0545
+
+    Update README.md
+
+[33mcommit 619174b1d7cd43abc37eaaaf670f606d237740f2[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 16:20:55 2026 +0545
+
+    Update README.md
+
+[33mcommit 8696cccee3f42be23361c2a5dfe28cd2052ee13b[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 16:16:36 2026 +0545
+
+    Update str.c
+
+[33mcommit b07318512735023f10e487722336fb58794a6dad[m
+Merge: c3b230f 2367e05
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 16:10:51 2026 +0545
+
+    Merge branch 'main' of github.com:slashSL07/python-string
+
+[33mcommit c3b230fbe6e0fdc0e2105cf3af233c9c5bb33b72[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 16:04:25 2026 +0545
+
+    2nd commit
+
+[33mcommit 2367e05acc9afe68109ddcb7ee0ccfe61992dc69[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 12:35:13 2026 +0545
+
+    Add Apache License 2.0
+    
+    Added the Apache License 2.0 to the project.
+
+[33mcommit c81fcc4d088882a8109ec832c309b5685ad1318c[m
+Author: Slash <65218031+slashSL07@users.noreply.github.com>
+Date:   Sat Apr 18 12:27:36 2026 +0545
+
+    Create README.md
+
+[33mcommit 7e27960c12cde4e553936c3acb45d15cce3cead2[m
+Author: slashSL07 <gamingsugyan@gmail.com>
+Date:   Sat Apr 18 12:17:52 2026 +0545
+
+    initial commit
