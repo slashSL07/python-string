@@ -90,7 +90,7 @@ str replace(str old_str, char* rep, char* new_str)
 }
 
 
-str capitalize(str string)
+str title(str string)
 {
   char* var = malloc(string.len);
   int c = 0;
@@ -202,7 +202,7 @@ int isnumeric(str string)
 
 
 
-str title(str string)
+str capitalize(str string)
 {
   char* b = malloc(string.len);
   

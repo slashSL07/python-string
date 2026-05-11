@@ -34,9 +34,9 @@ str *split(str string, char rep, int *length);
 int _index(str string, char c);
 // returns the number of occurances of a charecter in a given `string`
 int count(str string, char c);
-// returns a new `str` from `string` with the first letter in uppercase
-str title(str string);
 // returns a new `str` with the first letter of every word in uppercase
+str title(str string);
+// returns a new `str` from `string` with the first letter in uppercase
 str capitalize(str string);
 
 // converts `str` to `char*`

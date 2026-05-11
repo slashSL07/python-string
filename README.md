@@ -76,7 +76,7 @@ str title(str string);
 str capitalize(str string);
 ```
 
-* `capitalize` → Capitalizes the first letter of each word
+* `capitalize` → Capitalizes the first letter of the string
 * `title` → Formats the string in title case
 
 ---
